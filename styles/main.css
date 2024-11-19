@@ -69,7 +69,9 @@ section > article {
 .main-view-container {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    max-width: 60rem;
+    min-width: 48rem;
+    padding-left: 1rem;
     justify-content: center;
     align-items: center;
     margin-top: 3.5rem;
