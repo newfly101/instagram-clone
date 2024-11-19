@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Nanum+Pen+Script&display=swap');
+
+:root {
+    --image-my-profile: url("https://scontent.cdninstagram.com/v/t51.2885-19/464533597_1886951398495604_7074795045339671369_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=108&_nc_ohc=opKXzs8pWCwQ7kNvgHeIBLV&_nc_gid=9c93c2bf6a8a42cdbe751815a9d834f5&edm=APs17CUBAAAA&ccb=7-5&oh=00_AYCwe9iln6N7WUFuk_NxfpguKHnuKmMij3nw9OMSOQWzDA&oe=674276A5&_nc_sid=10d13b");
+    --image-nav-home: url("assets/icons/home.svg");
+    --image-nav-search: url("assets/icons/search.svg");
+    --image-nav-explore: url("assets/icons/explorer.svg");
+    --image-nav-reels: url("assets/icons/reels.svg");
+    --image-nav-message: url("assets/icons/message.svg");
+    --image-nav-notice: url("assets/icons/notice.svg");
+    --image-nav-make: url("assets/icons/make-add.svg");
+}
+
+*, button, input, select, textarea, header, body, footer, main {
+    font-size: 10px;
+    font-family: 'Nanum Pen Script', 'Roboto', serif;
+}
