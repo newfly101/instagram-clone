@@ -65,6 +65,24 @@ header div button {
     width: 20rem;
     height: 2.5rem;
     margin-left: 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: var(--color-button-hover);
+    background-image: var(--image-nav-search);
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.5rem;
+    background-position: 0.4rem center;
+    padding-left: 2.1rem;
+}
+.instagram-search::placeholder {
+    font-size: 1.6rem;
+}
+.instagram-search:focus {
+    outline: none;
+    border: none;
+    background-image: none;
+    padding-left: 1rem;
+    padding-right: 1.2rem;
 }
 .header-notice {
     width: 4rem;
