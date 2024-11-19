@@ -28,11 +28,16 @@ header div button {
 
 @media (max-width: 766px) {
     header {
+        position: fixed;
         display: flex;
+    }
+    main {
+        margin-top: 6rem;
     }
 }
 @media (min-width: 767px) {
     header {
+        position: static;
         display: none;
     }
 }
