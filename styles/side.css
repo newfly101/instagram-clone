@@ -2,8 +2,87 @@ nav {
     display: flex;
     position: fixed;
     font-size: 2.4rem;
-    width: 4.8rem;
-    height: 100%;
+    width: 7.2rem;
+    height: 100vh;
     padding: 0.8rem 1.2rem 2rem 1.2rem;
-    background: red;
+    background: var(--color-background);
+    border-right: 1px solid var(--color-border);
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+nav ul li{
+    font-size: 2.4rem;
+    padding: 1.5rem 0;
+    cursor: pointer;
+
+}
+nav > ul > li::before {
+    content: '';
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20rem;
+}
+
+@media (max-width: 766px) {
+    nav {
+        position: static;
+        display: none;
+    }
+    main {
+        margin-top: 6rem;
+        margin-left: 0;
+    }
+}
+@media (min-width: 767px) {
+    nav {
+        position: fixed;
+        display: flex;
+    }
+}
+
+.nav-instagram {
+    padding: 3rem 0 3rem 0;
+}
+
+.nav-instagram::before{
+    background-image: var(--image-instagram);
+}
+.nav-home::before {
+    background-image: var(--image-nav-home);
+}
+.nav-search::before {
+    background-image: var(--image-nav-search);
+}
+.nav-explore::before {
+    background-image: var(--image-nav-explore);
+}
+.nav-reels::before {
+    background-image: var(--image-nav-reels);
+}
+.nav-message::before {
+    background-image: var(--image-nav-message);
+}
+.nav-notice::before {
+    background-image: var(--image-nav-notice);
+}
+.nav-make::before {
+    background-image: var(--image-nav-make);
+}
+.nav-profile::before {
+    background-image: var(--image-my-profile);
+}
+.nav-burger::before {
+    background-image: var(--image-nav-burger);
 }

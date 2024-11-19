@@ -3,3 +3,19 @@ main {
     font-size: 2.4rem;
     margin-left:7.2rem;
 }
+.main-container {
+
+}
+
+/*@media (max-width: 766px) {*/
+/*    main {*/
+/*        margin-top: 6rem;*/
+/*        margin-left: 0;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 767px) {*/
+/*    nav {*/
+/*        margin-top: 0;*/
+/*        margin-left:7.2rem;*/
+/*    }*/
+/*}*/
