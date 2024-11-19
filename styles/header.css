@@ -3,14 +3,85 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     font-size: 1.6rem;
-    padding: 0 20px;
+    padding: 0 2rem;
     border-bottom: 1px solid var(--color-border-bottom);
     background: var(--color-background);
+}
+header h1 {
+    flex: 1;
+}
+header div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.instagram-logo {
+    cursor: pointer;
+}
+.header-arrow-down {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-left: -0.9rem;
+}
+.header-arrow-down::before {
+    content: '';
+    display: block;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-image: var(--image-header-arrow);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.instagram-search {
+    flex: 1;
+    width: 20rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+}
+.header-notice {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    border-radius: 1.5rem;
+}
+.header-notice::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: var(--image-nav-notice);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.header-notice:hover {
+    background-color: var(--color-button-hover);
 }
