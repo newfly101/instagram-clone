@@ -17,6 +17,8 @@
     --color-background: #ffffff;
     --color-border: #dbdbdb;
     --color-button-hover: #e8e8e8;
+    --color-post-background: #181818;
+    --color-text: #6d6d6d;
 }
 
 *, button, input, select, textarea, header, body, footer, main {

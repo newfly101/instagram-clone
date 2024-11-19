@@ -45,6 +45,8 @@ section > header > .main-story > div {
 }
 section > article {
     margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-text);
 }
 .story-user-profile {
     width: 5.5rem;
@@ -75,6 +77,13 @@ section > article {
     justify-content: center;
     align-items: center;
     margin-top: 3.5rem;
+}
+.main-view-container > article {
+    max-width: 46rem;
+}
+.main-view-container > article > p{
+    font-size: 2rem;
+    margin: 0.5rem 0;
 }
 article > figure {
     display: flex;
@@ -109,5 +118,10 @@ article > figure > figcaption {
     width: 46rem;
     height: 46rem;
     object-fit: contain;
-    background-color: #181818;
+    background-color: var(--color-post-background);
+}
+.light-word {
+    color: var(--color-text);
+    cursor: pointer;
+    /*font-weight: bold;*/
 }
