@@ -76,16 +76,38 @@ section > article {
     align-items: center;
     margin-top: 3.5rem;
 }
-
-/*figure {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    width: 100%;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-
-/*.main-side-view-container {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
+article > figure {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-items: center;
+    margin-bottom: 1rem;
+}
+article > figure > figcaption {
+    font-size: 2rem;
+}
+.post-user-profile {
+    width: 3.2rem;
+    height: 3.2rem;
+    /*background-color: red;*/
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.8rem 0 0;
+}
+.post-user-profile::before {
+    content: '';
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-image: var(--image-my-profile);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.post-image {
+    width: 46rem;
+    height: 46rem;
+    object-fit: contain;
+    background-color: #181818;
+}
