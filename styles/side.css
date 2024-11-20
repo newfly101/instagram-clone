@@ -10,6 +10,7 @@ nav {
     justify-content: space-between;
     flex-direction: column;
     box-sizing: border-box;
+
 }
 nav ul {
     display: flex;
@@ -22,6 +23,8 @@ nav ul li{
     font-size: 2.4rem;
     padding: 1.5rem 0;
     cursor: pointer;
+    /*display: flex;*/
+    /*flex-direction: row;*/
 
 }
 nav > ul > li::before {
@@ -45,15 +48,58 @@ nav > ul > li::before {
         margin-left: 0;
     }
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1263px) {
     nav {
         position: fixed;
         display: flex;
+        width: 7.2rem;
+    }
+    .nav-instagram {
+        display: flex;
+    }
+    .nav-instagram-logo {
+        display: none;
     }
 }
+@media (min-width: 1264px)  {
+    nav {
+        position: fixed;
+        display: flex;
+        width: 24.4rem;
+    }
+    main {
+        margin-top: 0;
+        margin-left: 24.4rem;
+    }
+    .nav-instagram {
+        display: none;
+    }
+    .nav-instagram-logo {
+        display: flex;
+    }
+    .nav-instagram-logo::before {
+        content: '';
+        display: block;
+        width: 11.6rem;
+        height: 4.4rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20rem;
+    }
+    nav > ul {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-left: 1rem;
+    }
 
+}
 .nav-instagram {
-    padding: 3rem 0 3rem 0;
+    height: 4.4rem;
+}
+.nav-instagram, .nav-instagram-logo {
+    margin: 3rem 0 3rem 0;
 }
 
 .nav-instagram::before{
@@ -85,4 +131,7 @@ nav > ul > li::before {
 }
 .nav-burger::before {
     background-image: var(--image-nav-burger);
+}
+.nav-instagram-logo::before {
+    background-image: var(--image-instagram-logo);
 }
