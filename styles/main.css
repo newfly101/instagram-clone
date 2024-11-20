@@ -8,6 +8,18 @@ main {
 main * {
     font-size: inherit;
 }
+
+@media (max-width: 1159px) {
+    .main-side-view-container {
+        display: none;
+    }
+}
+@media (min-width: 1160px) {
+    .main-side-view-container {
+        display: flex;
+    }
+}
+
 .main-container {
     display: flex;
     flex-direction: row;
