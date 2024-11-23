@@ -178,3 +178,18 @@ article > figure > figcaption {
     min-width: 20rem;
     margin-left: 1rem;
 }
+aside > nav {
+    min-width: 20rem;
+    max-width: 40rem;
+    margin-top: 1rem;
+}
+aside > nav > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+aside > nav > ul > li{
+    padding: 0.4rem;
+    font-size: 2.6rem;
+    cursor: pointer;
+}

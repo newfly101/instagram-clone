@@ -1,4 +1,4 @@
-nav {
+body > nav {
     display: flex;
     position: fixed;
     font-size: 2.4rem;
@@ -12,14 +12,14 @@ nav {
     box-sizing: border-box;
 
 }
-nav ul {
+body > nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     width: 100%;
 }
-nav ul li{
+body > nav ul li{
     font-size: 2.4rem;
     padding: 1.5rem 0;
     cursor: pointer;
@@ -27,7 +27,7 @@ nav ul li{
     /*flex-direction: row;*/
 
 }
-nav > ul > li::before {
+body > nav > ul > li::before {
     content: '';
     display: block;
     width: 2.8rem;
@@ -39,7 +39,7 @@ nav > ul > li::before {
 }
 
 @media (max-width: 766px) {
-    nav {
+    body > nav {
         position: static;
         display: none;
     }
@@ -49,7 +49,7 @@ nav > ul > li::before {
     }
 }
 @media (min-width: 767px) and (max-width: 1263px) {
-    nav {
+    body > nav {
         position: fixed;
         display: flex;
         width: 7.2rem;
@@ -62,7 +62,7 @@ nav > ul > li::before {
     }
 }
 @media (min-width: 1264px)  {
-    nav {
+    body > nav {
         position: fixed;
         display: flex;
         width: 24.4rem;
@@ -87,7 +87,7 @@ nav > ul > li::before {
         background-position: center;
         border-radius: 20rem;
     }
-    nav > ul {
+    body > nav > ul {
         display: flex;
         justify-content: start;
         align-items: start;
