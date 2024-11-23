@@ -10,12 +10,12 @@ main * {
 }
 
 @media (max-width: 1159px) {
-    .main-side-view-container {
+    .main-container aside {
         display: none;
     }
 }
 @media (min-width: 1160px) {
-    .main-side-view-container {
+    .main-container aside {
         display: flex;
     }
 }
@@ -136,4 +136,45 @@ article > figure > figcaption {
     color: var(--color-text);
     cursor: pointer;
     /*font-weight: bold;*/
+}
+
+.main-container > aside {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    margin-top: 3.5rem;
+}
+.main-container > aside > article, .user-recommend{
+    display: flex;
+    flex-direction: row;
+}
+.user-recommend {
+    justify-content: space-between;
+}
+.main-container > aside > article > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00caca;
+}
+.side-user-image{
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+}
+.side-user-image::before {
+    content: '';
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    padding : 0.5rem;
+    border-radius: 50%;
+    background-image: var(--image-my-profile);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-user-info {
+    min-width: 20rem;
+    margin-left: 1rem;
 }
