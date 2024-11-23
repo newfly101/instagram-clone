@@ -10,12 +10,12 @@ main * {
 }
 
 @media (max-width: 1159px) {
-    .main-container aside {
+    .main-container .footer {
         display: none;
     }
 }
 @media (min-width: 1160px) {
-    .main-container aside {
+    .main-container .footer {
         display: flex;
     }
 }
@@ -147,8 +147,12 @@ article > figure > figcaption {
 .main-container > aside > article, .user-recommend{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 0.8rem 0;
+    width: 40rem;
 }
 .user-recommend {
+    max-width: 40rem;
     justify-content: space-between;
 }
 .main-container > aside > article > p {
@@ -161,6 +165,7 @@ article > figure > figcaption {
     width: 5rem;
     height: 5rem;
     object-fit: contain;
+    margin-right: 1rem;
 }
 .side-user-image::before {
     content: '';
@@ -174,9 +179,15 @@ article > figure > figcaption {
     background-position: center;
     background-repeat: no-repeat;
 }
+.side-user {
+    display: flex;
+}
 .side-user-info {
-    min-width: 20rem;
-    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+aside {
+    margin-left: 3rem;
 }
 aside > nav {
     min-width: 20rem;
